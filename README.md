@@ -6,5 +6,5 @@
   
 # License
 
-  - https://craftpix.net
+  - https://craftpix.net/file-licenses/
   - http://dig.ccmixter.org/search?searchp=Reck 
