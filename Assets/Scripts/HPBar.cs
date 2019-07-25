@@ -30,7 +30,7 @@ public class HPBar : MonoBehaviour {
     }
 
     void Update() {
-		if (characterStat != null) {
+		if (characterStat != null) { 
 			maxHp = characterStat.maxHp;
 			hp = characterStat.hp;
 		}

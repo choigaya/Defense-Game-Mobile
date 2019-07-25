@@ -21,8 +21,6 @@ public class FindMonster : MonoBehaviour {
 				characterBehaviour.attack(damage);
 				lastAttackTime = Time.time; // 최근에 저장 한 시간을 넣어준다.
 
-
-
 			}
 		}
 	}

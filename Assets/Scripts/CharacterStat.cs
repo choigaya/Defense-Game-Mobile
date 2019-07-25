@@ -13,7 +13,6 @@ public class CharacterStat : MonoBehaviour {
 	public float coolTime = 2.0f; // 2초에 한번 씩 공격할 수 있도록 설정
 
 
-
 	private Animator animator;
 
 	public int attacked(int damage) {
@@ -53,7 +52,7 @@ public class CharacterStat : MonoBehaviour {
 			maxHp += 25; // 체력을 채워줌
 			hp = maxHp;
 			damage += 5; // 공격력을 높여줌
-			transform.localScale += new Vector3(0.01f,0.01f,0); // 위치를 지정해줌
+			transform.localScale += new Vector3(0.01f,0.01f,0); // 캐릭터의 크기가 육안으로 커보이게 만듦
 		}
 		else if (level == 2) {
 			level = 3;

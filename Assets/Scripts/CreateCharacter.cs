@@ -7,6 +7,8 @@ public class CreateCharacter : MonoBehaviour {
 
 	public GameObject characterPrefab1;
 	public GameObject characterPrefab2;
+	public GameObject characterPrefab3;
+	public GameObject characterPrefab4;
 
 	private GameObject characterPrefab;
 	private GameObject character;
@@ -37,6 +39,15 @@ public class CreateCharacter : MonoBehaviour {
 			characterPrefab = characterPrefab2; // 캐릭터2 에 맞게 초기화
 			characterStat = characterPrefab.GetComponent<CharacterStat>();
 		}
+		else if (gameManager.nowSelect == 3) {
+			characterPrefab = characterPrefab3;
+			characterStat = characterPrefab.GetComponent<CharacterStat>();
+		}
+		else if (gameManager.nowSelect == 4) {
+			characterPrefab = characterPrefab4;
+			characterStat = characterPrefab.GetComponent<CharacterStat>();
+		}
+
 		if (character == null) { // 캐릭터가 존재하지 않는 경우
 
 			CharacterStat characterStat = characterPrefab.GetComponent<CharacterStat>();

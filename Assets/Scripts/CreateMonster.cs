@@ -13,6 +13,9 @@ public class CreateMonster : MonoBehaviour {
 
 	public GameObject monster1Prefab;
 	public GameObject monster2Prefab;
+	public GameObject monster3Prefab;
+	public GameObject monster4Prefab;
+	public GameObject monster5Prefab;
 
 	private GameObject monsterPrefab;
 
@@ -70,7 +73,21 @@ public class CreateMonster : MonoBehaviour {
 					monsterPrefab = monster2Prefab;
 					gameManager.spawnTime = 2.0f;
 					gameManager.spawnNumber = 10;
-
+				}
+				else if (gameManager.round == 6) {
+					monsterPrefab = monster3Prefab;
+					gameManager.spawnTime = 2.0f;
+					gameManager.spawnNumber = 10;
+				}
+				else if (gameManager.round == 8) {
+					monsterPrefab = monster4Prefab;
+					gameManager.spawnTime = 2.0f;
+					gameManager.spawnNumber = 10;
+				}
+				else if (gameManager.round == 10) {
+					monsterPrefab = monster5Prefab;
+					gameManager.spawnTime = 2.0f;
+					gameManager.spawnNumber = 10;
 				}
 			}
 		}         

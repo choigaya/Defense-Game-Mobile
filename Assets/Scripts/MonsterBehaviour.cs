@@ -30,7 +30,7 @@ public class MonsterBehaviour : MonoBehaviour {
 		else {
 			transform.Translate(Vector2.left * monsterStat.speed * Time.deltaTime); // 1초에 1.0f 의 속도 로 왼쪽으로 움직인다.
 			if (attacking) {
-				transform.Translate(Vector2.right * monsterStat.speed * Time.deltaTime);
+				transform.Translate(Vector2.right * monsterStat.speed * Time.deltaTime); // 몬스터 가 제자리 에 멈춰서 공격 할 수 있음
 			}
 			if (targetStat != null && targetStat.hp <= 0) { // 캐릭터 가 없거나 죽은 경우
 				targetStat = null; // 타겟 팅 하는 캐릭터 가 없다고 설정
