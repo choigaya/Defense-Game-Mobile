@@ -183,8 +183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
-  hp: 60
-  maxHp: 60
+  hp: 30
+  maxHp: 30
   damage: 10
   cost: 150
   upgradeCost: 200
@@ -345,12 +345,12 @@ PrefabInstance:
     - target: {fileID: 2411255675790872954, guid: 7543a5ef4b324164c849cc7c4815e849,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.28
+      value: -2.96
       objectReference: {fileID: 0}
     - target: {fileID: 2411255675790872954, guid: 7543a5ef4b324164c849cc7c4815e849,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.11
+      value: 3.03
       objectReference: {fileID: 0}
     - target: {fileID: 2411255675790872954, guid: 7543a5ef4b324164c849cc7c4815e849,
         type: 3}
@@ -396,6 +396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411255675790872954, guid: 7543a5ef4b324164c849cc7c4815e849,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.52
       objectReference: {fileID: 0}
     - target: {fileID: 4871224240691633643, guid: 7543a5ef4b324164c849cc7c4815e849,
         type: 3}
