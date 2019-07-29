@@ -22,11 +22,10 @@ public class GameManager : MonoBehaviour { // 유니티 엔진내의 모든 것�
 	public int nowSelect;
 	public Image select1; // 캐릭터 1
 	public Image select2; // 캐릭터 2
-	// TODO: 반드시 editor 에 추가 하도록
-	//public Image select3; // 캐릭터 3
-	//public Image select4; // 캐릭터 4
+	public Image select3; // 캐릭터 3
+	public Image select4; // 캐릭터 4
 
-
+	
 	public Text clearText;
 	public Text lifeText;
 
@@ -56,30 +55,30 @@ public class GameManager : MonoBehaviour { // 유니티 엔진내의 모든 것�
 			nowSelect = 1;
 			select1.GetComponent<Image>().color = Color.gray;
 			select2.GetComponent<Image>().color = Color.white;
-			//select3.GetComponent<Image>().color = Color.white;
-			//select4.GetComponent<Image>().color = Color.white;
+			select3.GetComponent<Image>().color = Color.white;
+			select4.GetComponent<Image>().color = Color.white;
 
 		}
 		else if (number == 2) { // 캐릭터 2를 선택
 			nowSelect = 2;
 			select1.GetComponent<Image>().color = Color.white;
 			select2.GetComponent<Image>().color = Color.gray;
-			//select3.GetComponent<Image>().color = Color.white;
-			//select4.GetComponent<Image>().color = Color.white;
+			select3.GetComponent<Image>().color = Color.white;
+			select4.GetComponent<Image>().color = Color.white;
 		}
 		else if (number == 3) {
 			nowSelect = 3;
 			select1.GetComponent<Image>().color = Color.white;
 			select2.GetComponent<Image>().color = Color.white;
-			//select3.GetComponent<Image>().color = Color.gray;
-		    //select4.GetComponent<Image>().color = Color.white;
+			select3.GetComponent<Image>().color = Color.gray;
+		    select4.GetComponent<Image>().color = Color.white;
 		}
 		else if (number == 4) {
 			nowSelect = 4;
 			select1.GetComponent<Image>().color = Color.white;
 			select2.GetComponent<Image>().color = Color.white;
-			//select3.GetComponent<Image>().color = Color.white;
-			//select4.GetComponent<Image>().color = Color.gray;
+			select3.GetComponent<Image>().color = Color.white;
+			select4.GetComponent<Image>().color = Color.gray;
 		}
 	}
 	public void clearRound() {

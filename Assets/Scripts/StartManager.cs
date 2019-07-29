@@ -3,11 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartManager : MonoBehaviour {
+public class StartManager : MonoBehaviour { 
 
 	public void GameStart() {
 		SceneManager.LoadScene("GameScene");
 		Time.timeScale = 1; // 무조건 게임이 실행되어야 하기 때문에 1로 설정
+	}
+
+	public void gameHelp() { 
+		SceneManager.LoadScene("GameHelp");
+
+	}
+
+	public void closeBtn() {
+		SceneManager.LoadScene("StartScene");
+	}
+
+	public void nextBtn() {
+		SceneManager.LoadScene("GameNext");
+	}
+
+	public void prevBtn() {
+		SceneManager.LoadScene("GameHelp");
 	}
 
 	public void gameExit() {
