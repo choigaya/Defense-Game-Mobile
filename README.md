@@ -8,5 +8,8 @@ DefenseGame with unity
 
 # 스크린샷
 
-![Uploading newBG.png…]()
+ ![Uploading newBG.png…]()
+
+ ![메인](https://user-images.githubusercontent.com/11676387/62264121-aaac0500-b459-11e9-8cd1-ff51d3b7dc05.png)
+
 
