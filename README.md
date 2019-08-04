@@ -1,6 +1,3 @@
-# DefenseGame
-DefenseGame with unity
-
 # 소개 
 
 ![메인 png](https://user-images.githubusercontent.com/11676387/62414359-2de57a80-b655-11e9-9d26-fb7214cde3bf.jpg)
