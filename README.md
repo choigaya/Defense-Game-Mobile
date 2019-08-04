@@ -90,7 +90,38 @@ OnTriggerStay2D 함수에서 충돌하는 개체 를 감지하고 그 개체 가
 ![image](https://user-images.githubusercontent.com/11676387/62421069-f9b29e00-b6d6-11e9-8e59-35cc7f5656af.png)
 
 
+마찬가지로 Trigger 함수를 이용하여 각 개체 마다 충돌 하게 되면 몬스터 가 공격할 수 있도록 구현 하였습니다.
 
 
+
+![image](https://user-images.githubusercontent.com/11676387/62421094-4bf3bf00-b6d7-11e9-98d2-8f1b141c3d53.png)
+
+성 개체 또한 몬스터 의 충돌을 감지하기 위해 BoxCollider 2D를 적용하였고,충돌시 Hp(분홍 버섯)의 값이 줄어들게 됩니다.총 10라운드 로 구성되어있고,그 때 까지 성을 지키시면 승리 하게 됩니다.Fence 개체가 제어 하게 됩니다.
+
+
+
+# 플랫폼
+  
+  - 안드로이드(8.0.0+) 에서 만 구동 되는 게임입니다.
+  - PC & Linux win7 + 
+ 
+ 
+# 출처 및 저작권
+
+  - https://craftpix.net/file-licenses/
+  
+  - http://dig.ccmixter.org/licenses
+  
+  
+# 개발자 정보
+
+ - woosung827@gmail.com
+ 
+ - https://woosungchoi.github.io/portfolio/woosung_portfolio/
+
+ 
+ 
+ 
+ 
 
 
