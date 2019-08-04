@@ -11,7 +11,8 @@ DefenseGame with unity
 
 # 설명
 
-![설명(2)](https://user-images.githubusercontent.com/11676387/62414284-4608ca00-b654-11e9-8825-b1a0cc476a81.jpg)
+![설명(1)](https://user-images.githubusercontent.com/11676387/62419189-a3813300-b6b5-11e9-833e-74f28deb7c54.png)
+
 
 캐릭터 들은 각 타워 의 역할 을 하여 몬스터 들로 부터 성벽을 지킵니다.캐릭터들은 Box Collider 2D 를 가지고 있어서 몬스터들의 충돌 을 감지 할 수 있게 만들었습니다.
 
