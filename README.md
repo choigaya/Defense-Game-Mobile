@@ -28,7 +28,7 @@
 몬스터는 Respawn Spots에서 생성됩니다. 총 4개의 방향에서 랜덤으로 맵의 오른쪽으로 출현하게됩니다.CreateMonster.cs를 참고하시면 Tower Spot 과 비슷하다는 것을 알 수 있습니다. 캐릭터는 몬스터가 출현하게 되는 방향에 배치 해 성벽으로부터 지키게 됩니다. 즉, 오른쪽으로 출현하는 몬스터를 성벽 주변에 캐릭터를 배치해 지키는 게임입니다. 다시말해 캐릭터가 몬스터를 사전에 감지하여 제압합니다. 아래의 Bullet 오브젝트와 캐릭터 설명을 참고해주십시오.
 
    
-![respawn(1)](https://user-images.githubusercontent.com/11676387/62472049-e2f47000-b7d8-11e9-8662-37510714a239.png)
+![1_1_respawn(1)](https://user-images.githubusercontent.com/11676387/62481145-93b83a80-b7ec-11e9-9272-aa003bf052f4.png)
 ![1_respawn(2)](https://user-images.githubusercontent.com/11676387/62480969-2ad0c280-b7ec-11e9-8956-0b0c297b015b.png)
 ![1_respawn(3)](https://user-images.githubusercontent.com/11676387/62480970-2b695900-b7ec-11e9-9665-4954f4539e82.png)
 ![1_respawn(4)](https://user-images.githubusercontent.com/11676387/62480971-2b695900-b7ec-11e9-8503-cff12b1dd2b6.png)
