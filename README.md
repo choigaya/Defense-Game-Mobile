@@ -44,8 +44,11 @@
 
 ![몬스터정보(1)](https://user-images.githubusercontent.com/11676387/62474944-f60a3e80-b7de-11e9-96f3-43dfaff04485.png)
 
+<몬스터 정보>
+
 ![캐릭터정보(1)](https://user-images.githubusercontent.com/11676387/62475136-6913b500-b7df-11e9-8903-cefbe2321612.png)
 
+<캐릭터 정보>
 
 # 플랫폼
   
