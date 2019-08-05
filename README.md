@@ -32,7 +32,15 @@
     
 몬스터는 TowerSpot 과 비슷한 원리인 Respawn Spots 가 있습니다.랜덤 값을 주어서 몬스터 가 정해진 Spots 지역에 Vector 값을 지정 해준뒤 출현 하는 로직입니다.총 4개의 구역에서 몬스터 가 출현하게 됩니다.(GameScene -> Respawn Spots) 를 참고 해보시면 자세히 볼 수 있습니다.)
    
-![image](https://user-images.githubusercontent.com/11676387/62420889-c2db8880-b6d4-11e9-933f-14a5cd5e6aea.png)
+![respawn(1)](https://user-images.githubusercontent.com/11676387/62472049-e2f47000-b7d8-11e9-8662-37510714a239.png)
+
+![respawn(2)](https://user-images.githubusercontent.com/11676387/62472029-db34cb80-b7d8-11e9-8d04-fd346c46557b.png)
+
+![respawn(3)](https://user-images.githubusercontent.com/11676387/62472032-dcfe8f00-b7d8-11e9-90c8-1fbe4327916e.png)
+
+![respawn(4)](https://user-images.githubusercontent.com/11676387/62472036-de2fbc00-b7d8-11e9-975e-ac0690663b37.png)
+
+
    
 ![image](https://user-images.githubusercontent.com/11676387/62420981-e3581280-b6d5-11e9-897c-c226316b609d.png)
 
