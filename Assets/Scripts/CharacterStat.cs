@@ -1,6 +1,15 @@
-﻿using System.Collections;
+﻿/*
+
+  캐릭터 정보 를 설정 해줌
+
+  * public 으로 선언되었기 때문에 유니티 에디터 상에 서 도 설정 가능
+
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class CharacterStat : MonoBehaviour {
 
@@ -13,7 +22,7 @@ public class CharacterStat : MonoBehaviour {
 	public float coolTime = 2.0f; // 2초에 한번 씩 공격할 수 있도록 설정
 
 
-	private Animator animator;
+	private Animator animator; // 캐릭터 관련 애니메이션 개체를 가져옴
 
 	public int attacked(int damage) {
 		hp = hp - damage;
@@ -34,13 +43,13 @@ public class CharacterStat : MonoBehaviour {
 	}
 
 	public bool canLevelUp(int seed) { // 레벨 업 가능 여부 를 확인
-		if (level < 3) {
-			if (upgradeCost <= seed) {
+		if (level < 3) { // 레벨이 3 이하 인지 확인
+			if (upgradeCost <= seed) { // 씨앗이 업그레이드 금액 보다 높다면 레벨 업 가능
 				return true;
 			}
 			return false;
 		}
-		else {
+		else { //조건을 만족 못하면 레벨 업을 할 수 없음
 			return false;   
 		}
 
@@ -52,9 +61,10 @@ public class CharacterStat : MonoBehaviour {
 			maxHp += 25; // 체력을 채워줌
 			hp = maxHp;
 			damage += 5; // 공격력을 높여줌
-			transform.localScale += new Vector3(0.01f,0.01f,0); // 캐릭터의 크기가 육안으로 커보이게 만듦
-		}
-		else if (level == 2) {
+			transform.localScale += new Vector3(0.01f,0.01f,0); // TODO: 반드시 캐릭터를 2번이상 탭해야만 업그레이드 가능
+			                                                    // 캐릭터의 크기가 육안으로 커보이게 만듦
+
+		} else if (level == 2) { // 위와 동일 한 로직
 			level = 3;
 			maxHp += 50; 
 			hp = maxHp;

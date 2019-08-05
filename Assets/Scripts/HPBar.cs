@@ -38,6 +38,8 @@ public class HPBar : MonoBehaviour {
 			maxHp = monsterStat.maxHp;
 			hp = monsterStat.hp;
 		}
+
+		// HP bar 가 줄어드는 속도 를 지정
 		current = (float)hp / (float)maxHp * 100;
 		if (current <= 0) { // hp 가 0 이라면
 
@@ -45,7 +47,7 @@ public class HPBar : MonoBehaviour {
 
 		}
 	    Vector2 temp = image.transform.localScale; // 이미지의 크기를 불러옴
-		temp.x = current / max * scale; // HP 바의 게이지가 줄어듦
+		temp.x = current / max * scale; // HP 바의 게이지가 가로 로 줄어듦
 		image.transform.localScale = temp; 		
     }
 }

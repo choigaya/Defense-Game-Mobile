@@ -5,26 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class StartManager : MonoBehaviour { 
 
-	public void GameStart() {
+	public void GameStart() { // 게임 시작
 		SceneManager.LoadScene("GameScene");
 		Time.timeScale = 1; // 무조건 게임이 실행되어야 하기 때문에 1로 설정
 	}
 
-	public void gameHelp() { 
+	public void gameHelp() { // 게임 도움말
 		SceneManager.LoadScene("GameHelp");
 
 	}
 
-	public void closeBtn() {
-		SceneManager.LoadScene("StartScene");
+	public void closeBtn() { // close 버튼 을 눌렀을때
+		SceneManager.LoadScene("StartScene"); // 메인 으로 넘어감
 	}
 
-	public void nextBtn() {
+	public void nextBtn() { // next 버튼 을 눌렀을때
+		SceneManager.LoadScene("GameNext"); // 다음 도움 말로 넘어감
+	}
+
+	public void prevBtn() { // prev 버튼 을 눌렀을때
+		SceneManager.LoadScene("GameHelp"); // 이전 도움 말로 넘어감
+	}
+
+	public void gameOne() {
+		SceneManager.LoadScene("GameOne");
+	}
+
+	public void gameNext() {
 		SceneManager.LoadScene("GameNext");
-	}
-
-	public void prevBtn() {
-		SceneManager.LoadScene("GameHelp");
 	}
 
 	public void gameExit() {
@@ -32,7 +40,7 @@ public class StartManager : MonoBehaviour {
 	}
 
     void Start() {
-		Screen.SetResolution(1920,1200,true);
+		Screen.SetResolution(1920,1200,true); // 게임 을 시작할때 모바일 해상도를 맞춰줌
     }
 
     void Update() {

@@ -11,19 +11,20 @@ public class GameManager : MonoBehaviour { // 유니티 엔진내의 모든 것�
 	public int round = 0;
 	public int seed = 1000;
 
+	// 각 변수 들 선언,초기화,에디터 상에서 수정 가능
 	public int roundReadyTime = 5; // 라운드 대기 시간을 지정
 	public int totalRound = 3; // 총 라운드 를 지정
-	public int reward = 500; // 라운드 가 끝날때 마다 500씨앗씩 얻음
-	public float spawnTime = 2.5f;
-	public int spawnNumber = 5; // 한 라운드에서 몇마리 의 몬스터 가 출몰할지 결정
+	public int reward = 500;   // 씨앗 의 갯수
+	public float spawnTime = 2.5f; // 몬스터 respawn 타임
+	public int spawnNumber = 5;  // 몬스터 출현 횟수
 	
 	private AudioSource audioSource;
 
 	public int nowSelect;
-	public Image select1; // 캐릭터 1
-	public Image select2; // 캐릭터 2
-	public Image select3; // 캐릭터 3
-	public Image select4; // 캐릭터 4
+	public Image select1; // 캐릭터 warrior 1
+	public Image select2; // 캐릭터 warrior 2
+	public Image select3; // 캐릭터 wizzard 1
+	public Image select4; // 캐릭터 wizzard 2
 
 	
 	public Text clearText;
@@ -41,7 +42,6 @@ public class GameManager : MonoBehaviour { // 유니티 엔진내의 모든 것�
 			if (life == 0) { // 패배할경우
 				loseText.enabled = true; // 패배문자 출력
 				respawnSpots.GetComponent<CreateMonster>().enabled = false; // 몬스터 가 출몰 하지 않도록 설정
-
 			}
 		}
 		return life;
@@ -51,34 +51,31 @@ public class GameManager : MonoBehaviour { // 유니티 엔진내의 모든 것�
 	}
 
 	public void select(int number) { // 버튼을 선택 한 경우
-		if (number == 1) { // 캐릭터 1을 선택
+		if (number == 1) { // warrior 1을 선택
 			nowSelect = 1;
-			select1.GetComponent<Image>().color = Color.gray;
+			select1.GetComponent<Image>().color = Color.gray; // 자신을 제외 한 나머지 선택지는 모두 흰색으로 처리
 			select2.GetComponent<Image>().color = Color.white;
 			select3.GetComponent<Image>().color = Color.white;
 			select4.GetComponent<Image>().color = Color.white;
 
-		}
-		else if (number == 2) { // 캐릭터 2를 선택
+		} else if (number == 2) { // warrior 2를 선택
 			nowSelect = 2;
 			select1.GetComponent<Image>().color = Color.white;
-			select2.GetComponent<Image>().color = Color.gray;
+			select2.GetComponent<Image>().color = Color.gray; // 자신을 제외 한 나머지 선택지는 모두 흰색으로 처리
 			select3.GetComponent<Image>().color = Color.white;
 			select4.GetComponent<Image>().color = Color.white;
-		}
-		else if (number == 3) {
+		} else if (number == 3) { // wizzard 1을 선택
 			nowSelect = 3;
 			select1.GetComponent<Image>().color = Color.white;
 			select2.GetComponent<Image>().color = Color.white;
-			select3.GetComponent<Image>().color = Color.gray;
-		    select4.GetComponent<Image>().color = Color.white;
-		}
-		else if (number == 4) {
+			select3.GetComponent<Image>().color = Color.gray; // 자신을 제외 한 나머지 선택지는 모두 흰색으로 처리
+			select4.GetComponent<Image>().color = Color.white;
+		} else if (number == 4) { // wizzard 2를 선택
 			nowSelect = 4;
 			select1.GetComponent<Image>().color = Color.white;
 			select2.GetComponent<Image>().color = Color.white;
 			select3.GetComponent<Image>().color = Color.white;
-			select4.GetComponent<Image>().color = Color.gray;
+			select4.GetComponent<Image>().color = Color.gray; // 자신을 제외 한 나머지 선택지는 모두 흰색으로 처리
 		}
 	}
 	public void clearRound() {
@@ -98,13 +95,11 @@ public class GameManager : MonoBehaviour { // 유니티 엔진내의 모든 것�
 		if (round == 1) { // 처음 시작할 때에 다음 과 같이 보여줌
 			roundText.text = "ROUND 0" + round;
 			roundStartText.text = "ROUND 0" + round;
-		}
-		else if (round < 10) {
+		} else if (round < 10) {
 			roundText.text = "ROUND 0" + round;
 			roundStartText.text = "ROUND 0" + round;
 			roundStartText.GetComponent<Animator>().SetTrigger("Round Start");
-		}
-		else { // round 가 10 이상 일 경우 두 자리 로 표시 해줌
+		} else { // round 가 10 이상 일 경우 두 자리 로 표시 해줌
 			roundText.text = "ROUND " + round;
 			roundStartText.text = "ROUND " + round;
 			roundStartText.GetComponent<Animator>().SetTrigger("Round Start");
@@ -112,8 +107,8 @@ public class GameManager : MonoBehaviour { // 유니티 엔진내의 모든 것�
 		audioSource.PlayOneShot(audioSource.clip);
 	}
 
-	public void updateText() {
-		seedText.text = "씨앗: " + seed; 
+	public void updateText() { // 실시간으로 게임 상황에 맞게 씨앗 값을 갱신
+		seedText.text = "" + seed; 
 	}
 
     void Start() {

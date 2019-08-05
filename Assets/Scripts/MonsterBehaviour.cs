@@ -40,9 +40,9 @@ public class MonsterBehaviour : MonoBehaviour {
 		}
 	}
 
-	private void OnTriggerEnter2D(Collider2D other) {
+	private void OnTriggerEnter2D(Collider2D other) { //Trigger 가 체크되어있을 경우 Enter2d사용
 		if (other.gameObject.name == "Fence") { // 충돌한 객체 가 Fence 일 경우 
-			Destroy(gameObject);
+			Destroy(gameObject); // 몬스터 객체 는 사라지고,게임 HP 가 감소하게됨
 			gameManager.decreaseLife();
 		}
 		else if (other.gameObject.tag == "Character") { // 충돌한 객체 가 Character 일 경우
