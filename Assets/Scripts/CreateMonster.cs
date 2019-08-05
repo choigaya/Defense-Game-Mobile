@@ -78,8 +78,6 @@ public class CreateMonster : MonoBehaviour {
 				spawnCount = 0;
 				lastSpawnTime = Time.time; // 나오는 시간 을 현재시간 으로 불러옴
 
-
-				// 라운드 별로 캐릭터 들의 정보 가 다름.(에디터에서 수정 할 수있음)
 				if (gameManager.round == 4) {
 					monsterPrefab = monster2Prefab;
 					gameManager.spawnTime = 2.0f;
