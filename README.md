@@ -16,17 +16,12 @@
 # 메인 설명
 
 
-![image](https://user-images.githubusercontent.com/11676387/62420802-8ce9d480-b6d3-11e9-9dcf-f8260bce5d83.png)
-    
-   캐릭터 들은 각 타워 의 역할 을 하여 사용자가 맵 주변에 터치 를 하게 되면(빨간 원) OnMouseDown 함수 를 사용하여 사용자의 터치를 감지하여 캐릭터 들을 
-   건설 할 수 있도록 합니다.TowerSpot 이 역할 을 수행 할 수 있도록 해줍니다.원 반경 범위 안에 사용자 가 캐릭터를 건설 할 수 있도록 도와줍니   
-   다.CreateCharacter.cs 에는 다음 과 같은 소스코드 가 역할 을 수행합니다.
+![설명(1)](https://user-images.githubusercontent.com/11676387/62472727-4f23a380-b7da-11e9-91aa-c372de7ac33e.png)
 
+캐릭터들은 성벽을 지키는 타워 의 역할 을 수행하게 됩니다.사용자 가 맵 주변을 터치하게 되면 감지하게되어 캐릭터를 배치하게 하여 몬스터로부터 성벽을 지킬수 있게 됩니다. TowerSpot 오브젝트는 사용자가 타워를건설 할 수있도록해줍니다. TowerSpot 오브젝트는 CreateCharacter.cs 에서 제어 합니다.마우스 터치 를 할 수있는 OnMouseDown 을 사용하여 위에서 서술 했듯이 감지할 수있게 만들었습니다. 
 
- 
 ![image](https://user-images.githubusercontent.com/11676387/62420842-f833a680-b6d3-11e9-9c8f-24c1fe7736c1.png)
 
-   OnMouseDown 함수는 각 캐릭터 를 선택하게 되면 캐릭터를 지정된 곳에 배치 할 수 있도록 도와 줍니다.
    
 ![image](https://user-images.githubusercontent.com/11676387/62420875-84de6480-b6d4-11e9-9a3f-b7d86a89c958.png)
     
