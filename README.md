@@ -40,7 +40,7 @@
 # 충돌 처리   
 
 
-![충돌처리](https://user-images.githubusercontent.com/11676387/62475400-ee976500-b7df-11e9-9041-29f0a0215842.jpg)
+![충돌처리](https://user-images.githubusercontent.com/11676387/62475842-df64e700-b7e0-11e9-8548-c0a54ac2425c.png)
 
 
 
