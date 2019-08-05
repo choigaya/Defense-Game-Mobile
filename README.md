@@ -29,12 +29,9 @@
 
    
 ![respawn(1)](https://user-images.githubusercontent.com/11676387/62472049-e2f47000-b7d8-11e9-8662-37510714a239.png)
-
-![respawn(2)](https://user-images.githubusercontent.com/11676387/62472029-db34cb80-b7d8-11e9-8d04-fd346c46557b.png)
-
-![respawn(3)](https://user-images.githubusercontent.com/11676387/62472032-dcfe8f00-b7d8-11e9-90c8-1fbe4327916e.png)
-
-![respawn(4)](https://user-images.githubusercontent.com/11676387/62472036-de2fbc00-b7d8-11e9-975e-ac0690663b37.png)
+![1_respawn(2)](https://user-images.githubusercontent.com/11676387/62480969-2ad0c280-b7ec-11e9-8956-0b0c297b015b.png)
+![1_respawn(3)](https://user-images.githubusercontent.com/11676387/62480970-2b695900-b7ec-11e9-9665-4954f4539e82.png)
+![1_respawn(4)](https://user-images.githubusercontent.com/11676387/62480971-2b695900-b7ec-11e9-8503-cff12b1dd2b6.png)
 
 
 # 충돌 처리   
@@ -101,9 +98,9 @@
   
 # 샘플 파일 
 
-  안드로이드 apk 파일 
+- 안드로이드 apk 파일 
 
-https://drive.google.com/drive/u/1/folders/1HxuuZsnomRSpCnNNLplYDg39gI7mfyaF
+- https://drive.google.com/drive/u/1/folders/1HxuuZsnomRSpCnNNLplYDg39gI7mfyaF
 
   
   
