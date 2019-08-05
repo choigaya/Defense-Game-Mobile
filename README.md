@@ -25,7 +25,8 @@
    
 ![image](https://user-images.githubusercontent.com/11676387/62420875-84de6480-b6d4-11e9-9a3f-b7d86a89c958.png)
     
-몬스터는 TowerSpot 과 비슷한 원리인 Respawn Spots 가 있습니다.랜덤 값을 주어서 몬스터 가 정해진 Spots 지역에 Vector 값을 지정 해준뒤 출현 하는 로직입니다.총 4개의 구역에서 몬스터 가 출현하게 됩니다.(GameScene -> Respawn Spots) 를 참고 해보시면 자세히 볼 수 있습니다.)
+몬스터는  Respawn Spots 에서 생성됩니다.총 4개의 방향에서 랜덤으로 맵의 오른쪽 으로 출현하게됩니다.CreateMonster.cs 를 참고 하시면 TowerSpot 과 비슷 하다는 것을 알 수 있습니다.캐릭터는 몬스터 가 출현 하게 되는 방향 에 배치 시켜 성벽으로 부터 지키게 됩니다.즉,오른쪽으로 출현하는 몬스터를 성벽 주변에 캐릭터 를 배치시켜 지키는 게임입니다.다시말해 캐릭터가 몬스터를 사전에 감지 하여 제압합니다.아래의 Bullet 오브젝트 와 캐릭터 설명 을 참고해주십시오.
+
    
 ![respawn(1)](https://user-images.githubusercontent.com/11676387/62472049-e2f47000-b7d8-11e9-8662-37510714a239.png)
 
@@ -40,7 +41,7 @@
 ![image](https://user-images.githubusercontent.com/11676387/62420981-e3581280-b6d5-11e9-897c-c226316b609d.png)
 
 CreateMonser.cs 의 소스 내용 에 RespawnSpot 을 제어하는 코드 가 있습니다.
-캐릭터 들은 몬스터 들로 부터 성을 지킵니다.캐릭터들은 BoxCollider 2D 를 가지고 있어서 몬스터들의 충돌 을 감지 할 수 있게 만들었습니다.몬스터 도 마찬가지로 BoxCollider 2D를 적용하여 캐릭터 와 충돌시 캐릭터의 Hp 가 감소하도록 구현 하였습니다.(역으로도 성립)충돌 할시 캐릭터,몬스터 는 서로 공격을 하게 됩니다.
+캐릭터 들은 몬스터 들로 부터 성을 지킵니다.캐릭터들은 BoxCollider 2D 를 가지고 있어서 몬스터들의 충돌 을 감지 할 수 있게 만들었습니다.몬스터 도 마찬가지로 BoxCollider 2D를 적용하여 캐릭터 와 충돌시 캐릭터의 Hp 가 감소하도록 구현 하였습니다.충돌 할시 캐릭터,몬스터 는 서로 공격을 하게 됩니다.
 
 ![image](https://user-images.githubusercontent.com/11676387/62421006-3cc04180-b6d6-11e9-92c1-106049ab0e67.png)
 
