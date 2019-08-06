@@ -104,11 +104,7 @@
 
   
   
-# 개발자 정보
 
- - woosung827@gmail.com
- 
- - https://woosungchoi.github.io/portfolio/woosung_portfolio/
 
  
  
