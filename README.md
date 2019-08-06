@@ -115,11 +115,11 @@
 
 - 안드로이드 apk 파일 
 
-https://drive.google.com/drive/u/1/folders/1HxuuZsnomRSpCnNNLplYDg39gI7mfyaF
+  https://drive.google.com/drive/u/1/folders/1HxuuZsnomRSpCnNNLplYDg39gI7mfyaF
 
 - Assets 파일
 
-https://drive.google.com/open?id=1MWOqVLBCvhnQ_Re7OCxn0-czFANgJCF9
+  https://drive.google.com/open?id=1MWOqVLBCvhnQ_Re7OCxn0-czFANgJCF9
 
 
 
