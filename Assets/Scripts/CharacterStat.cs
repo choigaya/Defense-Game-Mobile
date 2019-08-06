@@ -4,8 +4,13 @@
 
   * public 으로 선언되었기 때문에 유니티 에디터 상에 서 도 설정 가능
 
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 */
 
+=======
+*/
+
+>>>>>>> final
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,9 +24,15 @@ public class CharacterStat : MonoBehaviour {
 	public int damage = 5; // 캐릭터의 공격력
 	public int cost = 130; // 캐릭터 설치 비용
 	public int upgradeCost = 200; // 캐릭터 업그레이드 비용
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 	public float coolTime = 2.0f; // 2초에 한번 씩 공격할 수 있도록 설정
 
 
+=======
+	public float coolTime = 2.0f; // 2초에 한번 씩 공격할 수 있도록 설정
+
+
+>>>>>>> final
 	private Animator animator; // 캐릭터 관련 애니메이션 개체를 가져옴
 
 	public int attacked(int damage) {

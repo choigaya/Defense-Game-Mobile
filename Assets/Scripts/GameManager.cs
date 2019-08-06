@@ -22,11 +22,19 @@ public class GameManager : MonoBehaviour { // 유니티 엔진내의 모든 것�
 
 	public int nowSelect;
 	public Image select1; // 캐릭터 warrior 1
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 	public Image select2; // 캐릭터 warrior 2
 	public Image select3; // 캐릭터 wizzard 1
 	public Image select4; // 캐릭터 wizzard 2
 
 	
+=======
+	public Image select2; // 캐릭터 warrior 2
+	public Image select3; // 캐릭터 wizzard 1
+	public Image select4; // 캐릭터 wizzard 2
+
+	
+>>>>>>> final
 	public Text clearText;
 	public Text lifeText;
 
@@ -50,6 +58,7 @@ public class GameManager : MonoBehaviour { // 유니티 엔진내의 모든 것�
 		clearText.enabled = true; // 승리했다는 엔진 상에 표시 해준다.
 	}
 
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 	public void select(int number) { // 버튼을 선택 한 경우
 		if (number == 1) { // warrior 1을 선택
 			nowSelect = 1;
@@ -76,6 +85,34 @@ public class GameManager : MonoBehaviour { // 유니티 엔진내의 모든 것�
 			select2.GetComponent<Image>().color = Color.white;
 			select3.GetComponent<Image>().color = Color.white;
 			select4.GetComponent<Image>().color = Color.gray; // 자신을 제외 한 나머지 선택지는 모두 흰색으로 처리
+=======
+	public void select(int number) { // 버튼을 선택 한 경우
+		if (number == 1) { // warrior 1을 선택
+			nowSelect = 1;
+			select1.GetComponent<Image>().color = Color.gray; // 자신을 제외 한 나머지 선택지는 모두 흰색으로 처리
+			select2.GetComponent<Image>().color = Color.white;
+			select3.GetComponent<Image>().color = Color.white;
+			select4.GetComponent<Image>().color = Color.white;
+
+		} else if (number == 2) { // warrior 2를 선택
+			nowSelect = 2;
+			select1.GetComponent<Image>().color = Color.white;
+			select2.GetComponent<Image>().color = Color.gray; // 자신을 제외 한 나머지 선택지는 모두 흰색으로 처리
+			select3.GetComponent<Image>().color = Color.white;
+			select4.GetComponent<Image>().color = Color.white;
+		} else if (number == 3) { // wizzard 1을 선택
+			nowSelect = 3;
+			select1.GetComponent<Image>().color = Color.white;
+			select2.GetComponent<Image>().color = Color.white;
+			select3.GetComponent<Image>().color = Color.gray; // 자신을 제외 한 나머지 선택지는 모두 흰색으로 처리
+			select4.GetComponent<Image>().color = Color.white;
+		} else if (number == 4) { // wizzard 2를 선택
+			nowSelect = 4;
+			select1.GetComponent<Image>().color = Color.white;
+			select2.GetComponent<Image>().color = Color.white;
+			select3.GetComponent<Image>().color = Color.white;
+			select4.GetComponent<Image>().color = Color.gray; // 자신을 제외 한 나머지 선택지는 모두 흰색으로 처리
+>>>>>>> final
 		}
 	}
 	public void clearRound() {

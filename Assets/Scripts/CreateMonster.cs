@@ -3,7 +3,11 @@
 
    * RespawnSpot 으로 제어 총 4개의 방향으로 몬스터가 출현 하도록 구현
    
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 */
+=======
+*/
+>>>>>>> final
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +23,11 @@ public class CreateMonster : MonoBehaviour {
 
 	// 몬스터는 총 5마리 로 구성됨
 	public GameObject monster1Prefab;
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 	public GameObject monster2Prefab;
+=======
+	public GameObject monster2Prefab;
+>>>>>>> final
 	public GameObject monster3Prefab;
 	public GameObject monster4Prefab;
 	public GameObject monster5Prefab;
@@ -76,6 +84,7 @@ public class CreateMonster : MonoBehaviour {
 				}
 				gameManager.clearRound();
 				spawnCount = 0;
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 				lastSpawnTime = Time.time; // 나오는 시간 을 현재시간 으로 불러옴
 
 				if (gameManager.round == 4) {
@@ -89,14 +98,36 @@ public class CreateMonster : MonoBehaviour {
 					gameManager.spawnNumber = 10;
 				}
 				else if (gameManager.round == 8) {
+=======
+				lastSpawnTime = Time.time; // 나오는 시간 을 현재시간 으로 불러옴
+
+				if (gameManager.round == 4) {
+					monsterPrefab = monster2Prefab;
+					gameManager.spawnTime = 2.0f;
+					gameManager.spawnNumber = 10;
+				}
+				else if (gameManager.round == 6) {
+					monsterPrefab = monster3Prefab;
+					gameManager.spawnTime = 2.0f;
+					gameManager.spawnNumber = 10;
+				}
+				else if (gameManager.round == 8) {
+>>>>>>> final
 					monsterPrefab = monster4Prefab;
 					gameManager.spawnTime = 2.0f;
 					gameManager.spawnNumber = 10;
 				}
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 				else if (gameManager.round == 10) {
 					monsterPrefab = monster5Prefab;
 					gameManager.spawnTime = 2.0f;
 					gameManager.spawnNumber = 10;
+=======
+				else if (gameManager.round == 10) {
+					monsterPrefab = monster5Prefab;
+					gameManager.spawnTime = 2.0f;
+					gameManager.spawnNumber = 10;
+>>>>>>> final
 				}
 			}
 		}         

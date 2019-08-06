@@ -212,8 +212,13 @@ MonoBehaviour:
   hp: 30
   maxHp: 30
   damage: 10
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
   cost: 150
   upgradeCost: 200
+=======
+  cost: 300
+  upgradeCost: 500
+>>>>>>> final
   coolTime: 2
 --- !u!95 &4859943450147507663
 Animator:

@@ -177,11 +177,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6f62302711418419e900265a6eaec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
   speed: 4
   damage: 40
   coolTime: 2
   hp: 30
   maxHp: 30
+=======
+  speed: 6
+  damage: 10
+  coolTime: 2
+  hp: 50
+  maxHp: 50
+>>>>>>> final
   animator: {fileID: 0}
 --- !u!82 &1318834129691286064
 AudioSource:

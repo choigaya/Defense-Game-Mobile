@@ -178,7 +178,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
   damage: 50
+=======
+  damage: 10
+>>>>>>> final
   coolTime: 2
   hp: 50
   maxHp: 50

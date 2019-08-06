@@ -25,7 +25,11 @@ AnimatorController:
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
     m_DefaultBool: 1
+=======
+    m_DefaultBool: 0
+>>>>>>> final
     m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5

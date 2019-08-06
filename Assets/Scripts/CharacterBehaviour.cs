@@ -4,8 +4,13 @@
   
   * 캐릭터의 각 정보를 초기화 하고 gameManager 를 불러와서 설정 해줌
 
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 */
 
+=======
+*/
+
+>>>>>>> final
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

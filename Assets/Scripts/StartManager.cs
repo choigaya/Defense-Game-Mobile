@@ -10,6 +10,7 @@ public class StartManager : MonoBehaviour {
 		Time.timeScale = 1; // 무조건 게임이 실행되어야 하기 때문에 1로 설정
 	}
 
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 	public void gameHelp() { // 게임 도움말
 		SceneManager.LoadScene("GameHelp");
 
@@ -32,6 +33,30 @@ public class StartManager : MonoBehaviour {
 	}
 
 	public void gameNext() {
+=======
+	public void gameHelp() { // 게임 도움말
+		SceneManager.LoadScene("GameHelp");
+
+	}
+
+	public void closeBtn() { // close 버튼 을 눌렀을때
+		SceneManager.LoadScene("StartScene"); // 메인 으로 넘어감
+	}
+
+	public void nextBtn() { // next 버튼 을 눌렀을때
+		SceneManager.LoadScene("GameNext"); // 다음 도움 말로 넘어감
+	}
+
+	public void prevBtn() { // prev 버튼 을 눌렀을때
+		SceneManager.LoadScene("GameHelp"); // 이전 도움 말로 넘어감
+	}
+
+	public void gameOne() {
+		SceneManager.LoadScene("GameOne");
+	}
+
+	public void gameNext() {
+>>>>>>> final
 		SceneManager.LoadScene("GameNext");
 	}
 

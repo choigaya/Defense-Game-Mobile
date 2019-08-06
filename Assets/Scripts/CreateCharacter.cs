@@ -3,8 +3,13 @@
 
    * TowerSpot 으로 제어,오브젝트에 적용된 곳에 타워(캐릭터)를 배치시킬수 있음.
    
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 */
 
+=======
+*/
+
+>>>>>>> final
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,6 +45,7 @@ public class CreateCharacter : MonoBehaviour {
 		// TODO: 마우스 일경우: -1,모바일: 0 이상
 	    if (EventSystem.current.IsPointerOverGameObject(-1) == true) { return; } // 게임 메뉴를 클릭할때 캐릭터 생성을 무효화 시킴
 		if (EventSystem.current.IsPointerOverGameObject(0) == true) { return; }
+<<<<<<< 627e825001672a527a6810afe0055227223a32ab
 		if (gameManager.nowSelect == 1) { // warrior 1 이 선택
 			characterPrefab = characterPrefab1; // warrior 1 에 맞게 초기화
 			characterStat = characterPrefab.GetComponent<CharacterStat>();
@@ -51,6 +57,19 @@ public class CreateCharacter : MonoBehaviour {
 			characterStat = characterPrefab.GetComponent<CharacterStat>();
 		} else if (gameManager.nowSelect == 4) { // wizzard 2가 선택
 			characterPrefab = characterPrefab4; // wizzard2 에 맞게 초기화
+=======
+		if (gameManager.nowSelect == 1) { // warrior 1 이 선택
+			characterPrefab = characterPrefab1; // warrior 1 에 맞게 초기화
+			characterStat = characterPrefab.GetComponent<CharacterStat>();
+		} else if (gameManager.nowSelect == 2) { // warriror 2가 선택
+			characterPrefab = characterPrefab2; // warrior 2 에 맞게 초기화
+			characterStat = characterPrefab.GetComponent<CharacterStat>();
+		} else if (gameManager.nowSelect == 3) { // wizzard 1이 선택
+			characterPrefab = characterPrefab3; // wizzard1 에 맞게 초기화
+			characterStat = characterPrefab.GetComponent<CharacterStat>();
+		} else if (gameManager.nowSelect == 4) { // wizzard 2가 선택
+			characterPrefab = characterPrefab4; // wizzard2 에 맞게 초기화
+>>>>>>> final
 			characterStat = characterPrefab.GetComponent<CharacterStat>();
 		}
 
