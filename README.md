@@ -112,11 +112,7 @@
   - http://dig.ccmixter.org/licenses
   
   
-# 샘플 파일 
 
-- 안드로이드 apk 파일 
-
-  https://drive.google.com/drive/u/1/folders/1HxuuZsnomRSpCnNNLplYDg39gI7mfyaF
 
 
 
